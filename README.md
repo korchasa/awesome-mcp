@@ -15,38 +15,58 @@ Model Context Protocol (MCP) is an open protocol developed by Anthropic that sta
 - [Core MCP Frameworks & Implementations](#core-mcp-frameworks-&-implementations) 
     - [MCP Servers & Clients](#mcp-servers-&-clients) 
         - [MCP Servers](#mcp-servers) (22)
+
         - [MCP Clients](#mcp-clients) (12)
+
         - [MCP Proxies & Bridges](#mcp-proxies-&-bridges) (2)
+
+
     - [MCP Directories & Collections](#mcp-directories-&-collections) (2)
+
     - [MCP Utilities & Tools](#mcp-utilities-&-tools) (4)
+
+
 - [Agent Frameworks & Orchestration](#agent-frameworks-&-orchestration) 
     - [Multi-Agent & Autonomous Frameworks](#multi-agent-&-autonomous-frameworks) 
         - [Python Multi-Agent Frameworks](#python-multi-agent-frameworks) (1)
+
         - [JavaScript/TypeScript Multi-Agent Frameworks](#javascript/typescript-multi-agent-frameworks) (1)
-        - [Other Languages Multi-Agent Frameworks](#other-languages-multi-agent-frameworks) 
-    - [Lightweight/Minimalist Frameworks](#lightweight/minimalist-frameworks) 
-    - [Specialized Agent Components](#specialized-agent-components) 
+
+
+
+
+
+
 - [MCP Integration with Development Tools](#mcp-integration-with-development-tools) 
-    - [IDE & Editor Integrations](#ide-&-editor-integrations) 
+
     - [Terminal & Shell Integrations](#terminal-&-shell-integrations) (1)
-    - [Browser & Web Integrations](#browser-&-web-integrations) 
+
+
+
 - [Domain-Specific MCP Applications](#domain-specific-mcp-applications) 
-    - [Knowledge Management & RAG](#knowledge-management-&-rag) 
-    - [Data Processing & Analysis](#data-processing-&-analysis) 
-    - [UI & Design Tools](#ui-&-design-tools) 
-    - [Productivity & Task Management](#productivity-&-task-management) 
+
+
+
+
+
 - [Multimodal & Specialized MCP Tools](#multimodal-&-specialized-mcp-tools) 
-    - [Voice & Audio Integrations](#voice-&-audio-integrations) 
-    - [Image & Visual Processing](#image-&-visual-processing) 
-    - [Document & Text Processing](#document-&-text-processing) 
+
+
+
+
 - [Cloud & Infrastructure MCP Solutions](#cloud-&-infrastructure-mcp-solutions) 
-    - [AWS & Cloud Provider Integrations](#aws-&-cloud-provider-integrations) 
+
     - [Self-Hosted & Local Deployments](#self-hosted-&-local-deployments) (1)
-    - [Docker & Kubernetes Solutions](#docker-&-kubernetes-solutions) 
+
+
+
 - [Resources & Educational Materials](#resources-&-educational-materials) 
     - [Curated Lists & Collections](#curated-lists-&-collections) (2)
-    - [Tutorials & Guides](#tutorials-&-guides) 
+
+
     - [Benchmarks & Evaluations](#benchmarks-&-evaluations) (1)
+
+
 
 
 
@@ -81,6 +101,7 @@ Model Context Protocol (MCP) is an open protocol developed by Anthropic that sta
 - [zcaceres/markdownify-mcp](https://github.com/zcaceres/markdownify-mcp) (★604 TypeScript) - Markdownify is an MCP server that converts various file types and web content into Markdown format.
 - [zueai/mcp-manager](https://github.com/zueai/mcp-manager) (★82 TypeScript) - A desktop application that provides an intuitive web UI for managing Model Context Protocol (MCP) servers for the Claude Desktop app on MacOS.
 
+
 #### MCP Clients
 
 - [AI-QL/chat-mcp](https://github.com/AI-QL/chat-mcp) (★70 HTML) - A cross-platform desktop chat application that leverages the Model Context Protocol (MCP) to interface with various large language models.
@@ -96,15 +117,19 @@ Model Context Protocol (MCP) is an open protocol developed by Anthropic that sta
 - [nanbingxyz/5ire](https://github.com/nanbingxyz/5ire) (★1020 TypeScript) - 5ire is a cross-platform desktop AI assistant and MCP client that connects to major AI service providers and supports local knowledge retrieval through an integrated MCP protocol.
 - [punkpeye/awesome-mcp-clients](https://github.com/punkpeye/awesome-mcp-clients) (★231 ) - A curated list of Model Context Protocol (MCP) clients that enable secure and standardized AI model interactions with various resources.
 
+
 #### MCP Proxies & Bridges
 
 - [SecretiveShell/MCP-Bridge](https://github.com/SecretiveShell/MCP-Bridge) (★281 Python) - MCP-Bridge is a middleware service that provides an OpenAI-compatible endpoint to interact with MCP tools.
 - [sparfenyuk/mcp-proxy](https://github.com/sparfenyuk/mcp-proxy) (★54 Python) - mcp-proxy is a proxy tool that bridges MCP servers using SSE transport and stdio interfaces to facilitate flexible communication between clients and servers.
 
+
+
 ### MCP Directories & Collections
 
 - [chatmcp/mcp-directory](https://github.com/chatmcp/mcp-directory) (★374 TypeScript) - A directory listing of awesome MCP servers with a live preview and community links.
 - [phase/MinecraftMappings](https://github.com/phase/MinecraftMappings) (★58 Kotlin) - A tool that creates transitive mappings converting between different Minecraft version naming schemes such as Spigot, MCP, Yarn, and Mojang.
+
 
 ### MCP Utilities & Tools
 
@@ -112,6 +137,8 @@ Model Context Protocol (MCP) is an open protocol developed by Anthropic that sta
 - [chkwon/PATHSolver.jl](https://github.com/chkwon/PATHSolver.jl) (★52 Julia) - PATHSolver.jl is a Julia package that wraps the PATH Solver to solve mixed complementarity problems.
 - [sigoden/llm-functions](https://github.com/sigoden/llm-functions) (★410 Shell) - A lightweight framework for creating LLM tools and agents using Bash, JavaScript, and Python functions.
 - [zortax/MinecraftInjectionAPI](https://github.com/zortax/MinecraftInjectionAPI) (★67 Java) - A simple API using MCP deobfuscation mappings to inject mods at runtime for Minecraft.
+
+
 
 ## Agent Frameworks & Orchestration
 
@@ -123,70 +150,52 @@ Model Context Protocol (MCP) is an open protocol developed by Anthropic that sta
 
 - [stripe/agent-toolkit](https://github.com/stripe/agent-toolkit) (★416 TypeScript) - A Python and TypeScript library that integrates the Stripe API into agent workflows with seamless support for MCP and popular agent frameworks.
 
+
 #### JavaScript/TypeScript Multi-Agent Frameworks
 
 - [mastra-ai/mastra](https://github.com/mastra-ai/mastra) (★8055 TypeScript) - Mastra is a TypeScript AI agent framework that enables rapid development of AI applications with support for workflows, agents, RAG, and easy integration with various LLM providers.
 
-#### Other Languages Multi-Agent Frameworks
 
 
-### Lightweight/Minimalist Frameworks
 
 
-### Specialized Agent Components
 
 
 ## MCP Integration with Development Tools
 
-
-### IDE & Editor Integrations
 
 
 ### Terminal & Shell Integrations
 
 - [rusiaaman/wcgw](https://github.com/rusiaaman/wcgw) (★183 Python) - wcgw is a shell and coding agent designed for Claude and ChatGPT that enables autonomous command execution and intelligent code editing on local machines.
 
-### Browser & Web Integrations
+
 
 
 ## Domain-Specific MCP Applications
 
 
-### Knowledge Management & RAG
 
 
-### Data Processing & Analysis
 
-
-### UI & Design Tools
-
-
-### Productivity & Task Management
 
 
 ## Multimodal & Specialized MCP Tools
 
 
-### Voice & Audio Integrations
 
 
-### Image & Visual Processing
-
-
-### Document & Text Processing
 
 
 ## Cloud & Infrastructure MCP Solutions
 
-
-### AWS & Cloud Provider Integrations
 
 
 ### Self-Hosted & Local Deployments
 
 - [dmayboroda/minima](https://github.com/dmayboroda/minima) (★535 Python) - Minima is an open source on-premises RAG solution with configurable containers for secure local document processing integrated with ChatGPT and MCP.
 
-### Docker & Kubernetes Solutions
+
 
 
 ## Resources & Educational Materials
@@ -197,12 +206,13 @@ Model Context Protocol (MCP) is an open protocol developed by Anthropic that sta
 - [AlexMili/Awesome-MCP](https://github.com/AlexMili/Awesome-MCP) (★70 ) - A curated list of Model Context Protocol (MCP) resources including servers, SDKs, and tools.
 - [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) (★3885 ) - A curated list of Model Context Protocol (MCP) servers for enhancing AI interactions.
 
-### Tutorials & Guides
 
 
 ### Benchmarks & Evaluations
 
 - [Upsonic/Upsonic](https://github.com/Upsonic/Upsonic) (★6707 Python) - Upsonic is a reliability-focused AI agent framework that leverages the Model Context Protocol (MCP) for production-ready multi-agent workflows.
+
+
 
 
 ## License
