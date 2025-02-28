@@ -12,6 +12,7 @@ Model Context Protocol (MCP) is an open protocol developed by Anthropic that sta
 - Exposing tools and capabilities to AI systems
 - Building composable integrations and workflows
 
+Table of Contents:
 - [Core MCP Frameworks & Implementations](#core-mcp-frameworks-&-implementations) 
     - [MCP Servers & Clients](#mcp-servers-&-clients) 
         - [MCP Servers](#mcp-servers) (22)
