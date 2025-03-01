@@ -13,7 +13,7 @@ Model Context Protocol (MCP) is an open protocol developed by Anthropic that sta
 - Building composable integrations and workflows
 
 Table of Contents:
-- [MCP Servers](#mcp-servers) (21)
+- [MCP Servers](#mcp-servers) (40)
 
 - [MCP Cients](#mcp-cients) (8)
 
@@ -29,24 +29,43 @@ Table of Contents:
 ## MCP Servers
 
 - [AgentDeskAI/browser-tools-mcp](https://github.com/AgentDeskAI/browser-tools-mcp) (★375 JavaScript) - BrowserTools MCP is a comprehensive tool that captures and processes browser data to enable AI applications through the Model Context Protocol.
+- [Brave Search](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search) (TypeScript) - Brave Search is a server component of the Model Context Protocol designed to integrate Brave Search functionalities into a larger ecosystem.
 - [DMontgomery40/deepseek-mcp-server](https://github.com/DMontgomery40/deepseek-mcp-server) (★72 JavaScript) - DeepSeek MCP Server is a proxy server that integrates DeepSeek's advanced language models with MCP-compatible applications to deliver enhanced conversational support.
-- [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) (★400 TypeScript) - A server that delivers Figma design metadata using the Model Context Protocol for AI coding agents.
+- [Everything](https://github.com/modelcontextprotocol/servers/tree/main/src/everything) (TypeScript) - Everything is a module within the ModelContextProtocol servers repository that provides comprehensive server functionality.
+- [Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) (TypeScript) - This module provides filesystem-related functionalities as part of the Model Context Protocol servers.
+- [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) (★402 TypeScript) - A server that delivers Figma design metadata using the Model Context Protocol for AI coding agents.
+- [Google Maps](https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps) (JavaScript) - A server-side module for integrating Google Maps functionalities into the Model Context Protocol ecosystem.
 - [Jeamee/MCPHub-Desktop](https://github.com/Jeamee/MCPHub-Desktop) (★65 TypeScript) - MCPHub Desktop is a GUI-based application that simplifies the process of discovering, installing, and managing MCP servers with one-click operations.
 - [JetBrains/mcp-jetbrains](https://github.com/JetBrains/mcp-jetbrains) (★111 JavaScript) - A MCP proxy server that connects client tools to JetBrains IDEs.
+- [MCP Git Server Component](https://github.com/modelcontextprotocol/servers/tree/main/src/git) (Not specified) - The MCP Git Server Component supports Git protocol operations within the Model Context Protocol server suite.
+- [MCP GitLab Server](https://github.com/modelcontextprotocol/servers/tree/main/src/gitlab) (TypeScript) - A server implementation that integrates GitLab functionalities within the Model Context Protocol ecosystem.
+- [MCP SQLite Server](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite) (TypeScript) - A server implementation for the Model Context Protocol that integrates SQLite as its database backend.
+- [Memory](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) (JavaScript) - Memory is a server module within the Model Context Protocol's servers repository that provides essential in-memory functionality.
+- [Model Context Protocol Redis Server](https://github.com/modelcontextprotocol/servers/tree/main/src/redis) (JavaScript) - A Redis-based server implementation that is part of the Model Context Protocol servers repository.
+- [ModelContextProtocol GitHub Server](https://github.com/modelcontextprotocol/servers/tree/main/src/github) (TypeScript) - This repository folder implements the GitHub server integration for ModelContextProtocol servers.
 - [OpenDataMCP/OpenDataMCP](https://github.com/OpenDataMCP/OpenDataMCP) (★76 Python) - OpenDataMCP connects open data sources to LLMs through the Model Context Protocol using a user-friendly CLI tool and publishing framework.
+- [Postgres - MCP Servers](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres) (TypeScript) - A server component for integrating PostgreSQL databases within the Model Context Protocol ecosystem.
 - [RafalWilinski/aws-mcp](https://github.com/RafalWilinski/aws-mcp) (★96 TypeScript) - An MCP server that enables AI assistants like Claude to interact with AWS resources using natural language.
 - [SecretiveShell/MCP-Bridge](https://github.com/SecretiveShell/MCP-Bridge) (★286 Python) - MCP-Bridge is a middleware solution that connects the OpenAI API with MCP tools to enable efficient integration and communication.
+- [Sentry](https://github.com/modelcontextprotocol/servers/tree/main/src/sentry) (TypeScript) - Sentry is a module within the Model Context Protocol servers that integrates error tracking and logging functionalities.
+- [SequentialThinking](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking) (TypeScript) - SequentialThinking is a server module that forms part of the Model Context Protocol's suite of services.
+- [Slack](https://github.com/modelcontextprotocol/servers/tree/main/src/slack) (TypeScript) - A server-side Slack integration module for the Model Context Protocol servers repository.
 - [appcypher/awesome-mcp-servers](https://github.com/appcypher/awesome-mcp-servers) (★913 ) - A curated list of production-ready and experimental MCP servers that extend AI capabilities.
-- [aws-kb-retrieval-server](https://github.com/modelcontextprotocol/servers/tree/main/src/aws-kb-retrieval-server) (★0 TypeScript) - A knowledge base retrieval server built for AWS infrastructure as part of the Model Context Protocol project.
+- [aws-kb-retrieval-server](https://github.com/modelcontextprotocol/servers/tree/main/src/aws-kb-retrieval-server) (TypeScript) - A knowledge base retrieval server built for AWS infrastructure as part of the Model Context Protocol project.
 - [beclab/Olares](https://github.com/beclab/Olares) (★1873 Shell) - Olares is an open-source sovereign cloud operating system that integrates local AI models and applications using an MCP-like protocol for secure, self-hosted deployment.
 - [chatmcp/mcp-directory](https://github.com/chatmcp/mcp-directory) (★375 TypeScript) - A curated directory website that lists outstanding MCP Servers.
 - [dmayboroda/minima](https://github.com/dmayboroda/minima) (★538 Python) - Minima is an open source on-premises RAG solution that offers secure local document processing and seamless integration with ChatGPT and MCP.
+- [everart](https://github.com/modelcontextprotocol/servers/tree/main/src/everart) (JavaScript) - Everart — серверное приложение в экосистеме Model Context Protocol, обеспечивающее функциональность для обработки запросов и управления данными.
 - [ferrislucas/iterm-mcp](https://github.com/ferrislucas/iterm-mcp) (★86 TypeScript) - A lightweight MCP server that provides natural terminal integration and REPL support in iTerm2.
+- [fetch](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) (JavaScript) - A module within the ModelContextProtocol Servers repository that handles HTTP fetch operations.
+- [gdrive](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive) (JavaScript) - A module for integrating Google Drive functionalities into the MCP Servers ecosystem.
 - [jasonjmcghee/claude-debugs-for-you](https://github.com/jasonjmcghee/claude-debugs-for-you) (★123 TypeScript) - This project is a VS Code extension and MCP server that enables interactive debugging with Claude and other large language models.
-- [jerhadf/linear-mcp-server](https://github.com/jerhadf/linear-mcp-server) (★96 JavaScript) - A Model Context Protocol server that integrates Linear's project management system with MCP to enable LLMs to manage Linear issues.
-- [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) (★3993 ) - A curated list of Model Context Protocol (MCP) servers that enhance AI interactions.
+- [jerhadf/linear-mcp-server](https://github.com/jerhadf/linear-mcp-server) (★97 JavaScript) - A Model Context Protocol server that integrates Linear's project management system with MCP to enable LLMs to manage Linear issues.
+- [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) (★3994 ) - A curated list of Model Context Protocol (MCP) servers that enhance AI interactions.
+- [puppeteer](https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer) (JavaScript) - Puppeteer is a server-side component designed to handle automated tasks within the Model Context Protocol servers ecosystem.
 - [rusiaaman/wcgw](https://github.com/rusiaaman/wcgw) (★189 Python) - wcgw is a desktop shell and coding agent that integrates with Claude and ChatGPT using the Model Context Protocol.
 - [shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph) (★56 JavaScript) - An MCP server that provides persistent memory for Claude through a customizable local knowledge graph.
+- [time](https://github.com/modelcontextprotocol/servers/tree/main/src/time) (TypeScript) - A time server implementation as part of the Model Context Protocol servers.
 - [zcaceres/markdownify-mcp](https://github.com/zcaceres/markdownify-mcp) (★610 TypeScript) - Markdownify is an MCP server that converts various file types and web content into Markdown format.
 - [zueai/mcp-manager](https://github.com/zueai/mcp-manager) (★83 TypeScript) - A desktop application for managing Model Context Protocol (MCP) servers on MacOS via the Claude Desktop app.
 
@@ -74,8 +93,8 @@ Table of Contents:
 - [cyanheads/atlas-mcp-server](https://github.com/cyanheads/atlas-mcp-server) (★88 TypeScript) - A TypeScript-based MCP server with Neo4j integration that enhances project management and collaboration for LLM agents.
 - [designcomputer/mysql_mcp_server](https://github.com/designcomputer/mysql_mcp_server) (★58 Python) - A secure Model Context Protocol server that enables AI assistants to interact with MySQL databases safely and efficiently.
 - [heshengtao/comfyui_LLM_party](https://github.com/heshengtao/comfyui_LLM_party) (★1393 Python) - A comprehensive LLM agent framework built on ComfyUI that integrates MCP tools and various local and cloud LLM services.
-- [lastmile-ai/mcp-agent](https://github.com/lastmile-ai/mcp-agent) (★627 Python) - mcp-agent is a lightweight, composable Python framework for building robust AI agents using the Model Context Protocol.
-- [mastra-ai/mastra](https://github.com/mastra-ai/mastra) (★8226 TypeScript) - Mastra is a TypeScript framework that streamlines rapid AI application development with support for agents, workflows, RAG, integrations, and evaluations.
+- [lastmile-ai/mcp-agent](https://github.com/lastmile-ai/mcp-agent) (★628 Python) - mcp-agent is a lightweight, composable Python framework for building robust AI agents using the Model Context Protocol.
+- [mastra-ai/mastra](https://github.com/mastra-ai/mastra) (★8237 TypeScript) - Mastra is a TypeScript framework that streamlines rapid AI application development with support for agents, workflows, RAG, integrations, and evaluations.
 - [punkpeye/fastmcp](https://github.com/punkpeye/fastmcp) (★259 TypeScript) - FastMCP is a TypeScript framework for building Model Context Protocol (MCP) servers capable of handling client sessions.
 - [sigoden/llm-functions](https://github.com/sigoden/llm-functions) (★412 Shell) - A versatile framework that simplifies the creation of LLM tools and agents using Bash, JavaScript, and Python functions.
 - [stripe/agent-toolkit](https://github.com/stripe/agent-toolkit) (★419 TypeScript) - Stripe Agent Toolkit is a Python and TypeScript library that integrates the Stripe API with popular agent frameworks, including Model Context Protocol, for seamless API interactions.
