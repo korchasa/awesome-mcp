@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A curated list of awesome Model Context Protocol (MCP) and Model Context Protocol-related software.
+">
+    <meta name="keywords" content="Model Context Protocol, MCP, AI, LLM, autonomous systems, multi-agent systems, AI frameworks, AI tools">
+    <meta name="author" content="Awesome MCP Contributors">
+    <meta property="og:title" content="Awesome MCP">
+    <meta property="og:description" content="A curated list of awesome Model Context Protocol (MCP) and Model Context Protocol-related software.
+">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://awesome-mcp.korchasa.dev">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Awesome MCP">
+    <meta name="twitter:description" content="A curated list of awesome Model Context Protocol (MCP) and Model Context Protocol-related software.
+">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon and mobile icons -->
+    <link rel="icon" href="https://awesome-mcp.korchasa.dev/favicon.ico" sizes="any">
+    <link rel="icon" href="https://awesome-mcp.korchasa.dev/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://awesome-mcp.korchasa.dev/apple-touch-icon.png">
+    <link rel="manifest" href="https://awesome-mcp.korchasa.dev/manifest.webmanifest">
+    <meta name="theme-color" content="#0366d6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <title>Awesome MCP</title>
+    <style>
+        body {
+            font-family: 'JetBrains Mono', 'Roboto Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin: 2rem 0 1.2rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 1rem 0 2rem;
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 2.5rem 0 1.5rem;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.25em;
+            margin: 2rem 0 1rem;
+        }
+        h4 {
+            font-size: 1em;
+            margin: 1.5rem 0 0.8rem;
+        }
+        p {
+            margin: 0 0 1.5rem;
+            max-width: 85ch;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem;
+        }
+        li {
+            margin: 1rem 0;
+            padding-left: 1em;
+            position: relative;
+            line-height: 1.6;
+        }
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0366d6;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+            border-bottom: 1px dotted transparent;
+            transition: border-color 0.2s ease;
+        }
+        a:hover {
+            border-bottom-color: #0366d6;
+            text-decoration: none;
+        }
+        .note {
+            background-color: #e7f3fe;
+            border-left: 4px solid #007acc;
+            padding: 15px;
+            margin: 2.5rem 0;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        .license {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            padding: 1rem;
+            border-top: 1px solid #eee;
+        }
+        .stars {
+            color: #4d88ff;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 0.9em;
+        }
+        .language {
+            color: #6a737d;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-right: 8px;
+            margin-left: 3px;
+            background-color: #f1f1f1;
+            padding: 0.1rem 0.4rem;
+            border-radius: 3px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header, nav, main, footer {
+            margin-bottom: 3rem;
+            padding: 0 15px;
+        }
+        section {
+            padding-bottom: 1rem;
+        }
+        section + section {
+            border-top: 1px dashed #eee;
+            padding-top: 1.5rem;
+        }
+        /* More compact TOC */
+        nav ul li {
+            margin: 0.3rem 0;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        /* Nested TOC elements */
+        nav ul ul {
+            margin: 0.3rem 0 0.3rem 0.8rem;
+        }
+        /* Style for item count in TOC */
+        nav ul li span {
+            color: #666;
+            font-size: 0.85em;
+        }
+        main ul li:hover {
+            border-left-color: #007acc;
+            background: #f5f9ff;
+        }
+        /* Styles for static menu */
+        .main-menu {
+            margin-bottom: 1rem;
+        }
+        .main-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        .main-menu li {
+            margin: 0;
+        }
+        .main-menu a {
+            color: #0366d6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .main-menu a:hover {
+            text-decoration: underline;
+        }
+        /* Styles for back to TOC link */
+        .back-to-toc {
+            text-align: right;
+            font-size: 0.85em;
+            margin-top: 1rem;
+        }
+        .back-to-toc a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        .back-to-toc a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Awesome MCP",
+        "description": "A curated list of awesome Model Context Protocol (MCP) and Model Context Protocol-related software.
+",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Awesome MCP Contributors"
+        },
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "about": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Sharing contextual information with language models"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Exposing tools and capabilities to AI systems"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Building composable integrations and workflows"
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header role="banner">
+            <h1 id="awesome-ai-agents">Awesome MCP</h1>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="https://github.com/korchasa/awesome-mcp">GitHub</a></li>
+                </ul>
+            </nav>
+            <div class="note" role="note" aria-label="Important note about this repository">
+                <strong>Note:</strong> This repository contains an automatically compiled list of frameworks, tools, and resources related to Model Context Protocol (MCP).
+            </div>
+            <div>
+                A curated list of awesome Model Context Protocol (MCP) and Model Context Protocol-related software.
+
+            </div>
+        </header>
+
+        <nav role="navigation" aria-labelledby="toc-heading">
+            <h2 id="toc-heading">Table of Contents</h2><ul>
+                <li style="margin-left: 0px;">
+                    <a href="#mcp-servers" aria-label="Go to MCP Servers section">MCP Servers</a> <span aria-label="50 items">(50)</span>
+                    </li>
+            
+                <li style="margin-left: 0px;">
+                    <a href="#mcp-cients" aria-label="Go to MCP Cients section">MCP Cients</a> <span aria-label="12 items">(12)</span>
+                    </li>
+            
+                <li style="margin-left: 0px;">
+                    <a href="#mcp-frameworks-and-libraries" aria-label="Go to MCP Frameworks and libraries section">MCP Frameworks and libraries</a> <span aria-label="26 items">(26)</span>
+                    </li>
+            
+                <li style="margin-left: 0px;">
+                    <a href="#mcp-utilities-&-tools" aria-label="Go to MCP Utilities & Tools section">MCP Utilities & Tools</a> <span aria-label="2 items">(2)</span>
+                    </li>
+            
+                <li style="margin-left: 0px;">
+                    <a href="#mcp-resources-&-educational-materials" aria-label="Go to MCP Resources & Educational Materials section">MCP Resources & Educational Materials</a> <span aria-label="4 items">(4)</span>
+                    </li>
+            </ul>
+        </nav>
+
+        <main role="main">
+            <section aria-labelledby="mcp-servers"><h2 id="mcp-servers">MCP Servers</h2>
+                <ul aria-label="List of MCP Servers items">
+                    <li>
+                        <a href="https://github.com/AgentDeskAI/browser-tools-mcp" aria-label="AgentDeskAI/browser-tools-mcp - 904 stars, JavaScript" target="_blank" rel="noopener">AgentDeskAI/browser-tools-mcp</a>
+                        <span class="stars" aria-hidden="true">⭐ 904</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>BrowserTools MCP is a comprehensive tool that captures and processes browser data to enable AI applications through the Model Context Protocol.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search" aria-label="Brave Search - 0 stars, TypeScript" target="_blank" rel="noopener">Brave Search</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>Brave Search is a server component of the Model Context Protocol designed to integrate Brave Search functionalities into a larger ecosystem.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DMontgomery40/deepseek-mcp-server" aria-label="DMontgomery40/deepseek-mcp-server - 88 stars, JavaScript" target="_blank" rel="noopener">DMontgomery40/deepseek-mcp-server</a>
+                        <span class="stars" aria-hidden="true">⭐ 88</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>DeepSeek MCP Server is a proxy server that integrates DeepSeek's advanced language models with MCP-compatible applications to deliver enhanced conversational support.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/everything" aria-label="Everything - 0 stars, TypeScript" target="_blank" rel="noopener">Everything</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>Everything is a module within the ModelContextProtocol servers repository that provides comprehensive server functionality.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem" aria-label="Filesystem - 0 stars, TypeScript" target="_blank" rel="noopener">Filesystem</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>This module provides filesystem-related functionalities as part of the Model Context Protocol servers.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GLips/Figma-Context-MCP" aria-label="GLips/Figma-Context-MCP - 1087 stars, TypeScript" target="_blank" rel="noopener">GLips/Figma-Context-MCP</a>
+                        <span class="stars" aria-hidden="true">⭐ 1087</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A server that delivers Figma design metadata using the Model Context Protocol for AI coding agents.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps" aria-label="Google Maps - 0 stars, JavaScript" target="_blank" rel="noopener">Google Maps</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>A server-side module for integrating Google Maps functionalities into the Model Context Protocol ecosystem.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Jeamee/MCPHub-Desktop" aria-label="Jeamee/MCPHub-Desktop - 75 stars, TypeScript" target="_blank" rel="noopener">Jeamee/MCPHub-Desktop</a>
+                        <span class="stars" aria-hidden="true">⭐ 75</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>MCPHub Desktop is a GUI-based application that simplifies the process of discovering, installing, and managing MCP servers with one-click operations.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JetBrains/mcp-jetbrains" aria-label="JetBrains/mcp-jetbrains - 164 stars, JavaScript" target="_blank" rel="noopener">JetBrains/mcp-jetbrains</a>
+                        <span class="stars" aria-hidden="true">⭐ 164</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>A MCP proxy server that connects client tools to JetBrains IDEs.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/git" aria-label="MCP Git Server Component - 0 stars, Not specified" target="_blank" rel="noopener">MCP Git Server Component</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">Not specified</span> -
+                        <span>The MCP Git Server Component supports Git protocol operations within the Model Context Protocol server suite.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/gitlab" aria-label="MCP GitLab Server - 0 stars, TypeScript" target="_blank" rel="noopener">MCP GitLab Server</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A server implementation that integrates GitLab functionalities within the Model Context Protocol ecosystem.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite" aria-label="MCP SQLite Server - 0 stars, TypeScript" target="_blank" rel="noopener">MCP SQLite Server</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A server implementation for the Model Context Protocol that integrates SQLite as its database backend.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/memory" aria-label="Memory - 0 stars, JavaScript" target="_blank" rel="noopener">Memory</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>Memory is a server module within the Model Context Protocol's servers repository that provides essential in-memory functionality.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/redis" aria-label="Model Context Protocol Redis Server - 0 stars, JavaScript" target="_blank" rel="noopener">Model Context Protocol Redis Server</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>A Redis-based server implementation that is part of the Model Context Protocol servers repository.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/github" aria-label="ModelContextProtocol GitHub Server - 0 stars, TypeScript" target="_blank" rel="noopener">ModelContextProtocol GitHub Server</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>This repository folder implements the GitHub server integration for ModelContextProtocol servers.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/OpenDataMCP/OpenDataMCP" aria-label="OpenDataMCP/OpenDataMCP - 82 stars, Python" target="_blank" rel="noopener">OpenDataMCP/OpenDataMCP</a>
+                        <span class="stars" aria-hidden="true">⭐ 82</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>OpenDataMCP connects open data sources to LLMs through the Model Context Protocol using a user-friendly CLI tool and publishing framework.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/postgres" aria-label="Postgres - MCP Servers - 0 stars, TypeScript" target="_blank" rel="noopener">Postgres - MCP Servers</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A server component for integrating PostgreSQL databases within the Model Context Protocol ecosystem.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RafalWilinski/aws-mcp" aria-label="RafalWilinski/aws-mcp - 165 stars, TypeScript" target="_blank" rel="noopener">RafalWilinski/aws-mcp</a>
+                        <span class="stars" aria-hidden="true">⭐ 165</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>An MCP server that enables AI assistants like Claude to interact with AWS resources using natural language.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/SecretiveShell/MCP-Bridge" aria-label="SecretiveShell/MCP-Bridge - 340 stars, Python" target="_blank" rel="noopener">SecretiveShell/MCP-Bridge</a>
+                        <span class="stars" aria-hidden="true">⭐ 340</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>MCP-Bridge is a middleware solution that connects the OpenAI API with MCP tools to enable efficient integration and communication.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/sentry" aria-label="Sentry - 0 stars, TypeScript" target="_blank" rel="noopener">Sentry</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>Sentry is a module within the Model Context Protocol servers that integrates error tracking and logging functionalities.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking" aria-label="SequentialThinking - 0 stars, TypeScript" target="_blank" rel="noopener">SequentialThinking</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>SequentialThinking is a server module that forms part of the Model Context Protocol's suite of services.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/SimonB97/win-cli-mcp-server" aria-label="SimonB97/win-cli-mcp-server - 58 stars, JavaScript" target="_blank" rel="noopener">SimonB97/win-cli-mcp-server</a>
+                        <span class="stars" aria-hidden="true">⭐ 58</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>The 'win-cli-mcp-server' is a secure Model Context Protocol server that allows controlled command-line interactions on Windows systems.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/slack" aria-label="Slack - 0 stars, TypeScript" target="_blank" rel="noopener">Slack</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A server-side Slack integration module for the Model Context Protocol servers repository.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/adhikasp/mcp-git-ingest" aria-label="adhikasp/mcp-git-ingest - 53 stars, Python" target="_blank" rel="noopener">adhikasp/mcp-git-ingest</a>
+                        <span class="stars" aria-hidden="true">⭐ 53</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>`mcp-git-ingest` is a Model Context Protocol server that aids in reading GitHub repository structures and important files.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/appcypher/awesome-mcp-servers" aria-label="appcypher/awesome-mcp-servers - 1289 stars, " target="_blank" rel="noopener">appcypher/awesome-mcp-servers</a>
+                        <span class="stars" aria-hidden="true">⭐ 1289</span>
+                        <span class="language" aria-hidden="true"></span> -
+                        <span>A curated list of production-ready and experimental MCP servers that extend AI capabilities.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/aws-kb-retrieval-server" aria-label="aws-kb-retrieval-server - 0 stars, TypeScript" target="_blank" rel="noopener">aws-kb-retrieval-server</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A knowledge base retrieval server built for AWS infrastructure as part of the Model Context Protocol project.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/beclab/Olares" aria-label="beclab/Olares - 1895 stars, Shell" target="_blank" rel="noopener">beclab/Olares</a>
+                        <span class="stars" aria-hidden="true">⭐ 1895</span>
+                        <span class="language" aria-hidden="true">Shell</span> -
+                        <span>Olares is an open-source sovereign cloud operating system that integrates local AI models and applications using an MCP-like protocol for secure, self-hosted deployment.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/chatmcp/mcp-directory" aria-label="chatmcp/mcp-directory - 412 stars, TypeScript" target="_blank" rel="noopener">chatmcp/mcp-directory</a>
+                        <span class="stars" aria-hidden="true">⭐ 412</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A curated directory website that lists outstanding MCP Servers.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dmayboroda/minima" aria-label="dmayboroda/minima - 581 stars, Python" target="_blank" rel="noopener">dmayboroda/minima</a>
+                        <span class="stars" aria-hidden="true">⭐ 581</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>Minima is an open source on-premises RAG solution that offers secure local document processing and seamless integration with ChatGPT and MCP.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/everart" aria-label="everart - 0 stars, JavaScript" target="_blank" rel="noopener">everart</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>Everart — серверное приложение в экосистеме Model Context Protocol, обеспечивающее функциональность для обработки запросов и управления данными.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ferrislucas/iterm-mcp" aria-label="ferrislucas/iterm-mcp - 109 stars, TypeScript" target="_blank" rel="noopener">ferrislucas/iterm-mcp</a>
+                        <span class="stars" aria-hidden="true">⭐ 109</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A lightweight MCP server that provides natural terminal integration and REPL support in iTerm2.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/fetch" aria-label="fetch - 0 stars, JavaScript" target="_blank" rel="noopener">fetch</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>A module within the ModelContextProtocol Servers repository that handles HTTP fetch operations.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive" aria-label="gdrive - 0 stars, JavaScript" target="_blank" rel="noopener">gdrive</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>A module for integrating Google Drive functionalities into the MCP Servers ecosystem.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jasonjmcghee/claude-debugs-for-you" aria-label="jasonjmcghee/claude-debugs-for-you - 166 stars, TypeScript" target="_blank" rel="noopener">jasonjmcghee/claude-debugs-for-you</a>
+                        <span class="stars" aria-hidden="true">⭐ 166</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>This project is a VS Code extension and MCP server that enables interactive debugging with Claude and other large language models.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jerhadf/linear-mcp-server" aria-label="jerhadf/linear-mcp-server - 136 stars, JavaScript" target="_blank" rel="noopener">jerhadf/linear-mcp-server</a>
+                        <span class="stars" aria-hidden="true">⭐ 136</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>A Model Context Protocol server that integrates Linear's project management system with MCP to enable LLMs to manage Linear issues.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ktanaka101/mcp-server-duckdb" aria-label="ktanaka101/mcp-server-duckdb - 55 stars, Python" target="_blank" rel="noopener">ktanaka101/mcp-server-duckdb</a>
+                        <span class="stars" aria-hidden="true">⭐ 55</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>A Model Context Protocol (MCP) server implementation for DuckDB that allows secure interactions with databases for advanced data-driven applications.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/create-python-server" aria-label="modelcontextprotocol/create-python-server - 230 stars, Python" target="_blank" rel="noopener">modelcontextprotocol/create-python-server</a>
+                        <span class="stars" aria-hidden="true">⭐ 230</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>A command-line tool that automatically creates and configures a new Python Model Context Protocol (MCP) server project.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/create-typescript-server" aria-label="modelcontextprotocol/create-typescript-server - 110 stars, JavaScript" target="_blank" rel="noopener">modelcontextprotocol/create-typescript-server</a>
+                        <span class="stars" aria-hidden="true">⭐ 110</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>A CLI tool that scaffolds a new TypeScript server to support the Model Context Protocol.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/inspector" aria-label="modelcontextprotocol/inspector - 583 stars, TypeScript" target="_blank" rel="noopener">modelcontextprotocol/inspector</a>
+                        <span class="stars" aria-hidden="true">⭐ 583</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>MCP Inspector is a visual testing tool for debugging and validating MCP servers.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/quickstart-resources" aria-label="modelcontextprotocol/quickstart-resources - 118 stars, Python" target="_blank" rel="noopener">modelcontextprotocol/quickstart-resources</a>
+                        <span class="stars" aria-hidden="true">⭐ 118</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>This repository offers server and client resources from Model Context Protocol tutorials.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers" aria-label="modelcontextprotocol/servers - 15032 stars, JavaScript" target="_blank" rel="noopener">modelcontextprotocol/servers</a>
+                        <span class="stars" aria-hidden="true">⭐ 15032</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>This repository provides reference implementations for MCP servers to enable secure and controlled access to tools and data sources for large language models.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/punkpeye/awesome-mcp-servers" aria-label="punkpeye/awesome-mcp-servers - 6734 stars, " target="_blank" rel="noopener">punkpeye/awesome-mcp-servers</a>
+                        <span class="stars" aria-hidden="true">⭐ 6734</span>
+                        <span class="language" aria-hidden="true"></span> -
+                        <span>A curated list of Model Context Protocol (MCP) servers that enhance AI interactions.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer" aria-label="puppeteer - 0 stars, JavaScript" target="_blank" rel="noopener">puppeteer</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>Puppeteer is a server-side component designed to handle automated tasks within the Model Context Protocol servers ecosystem.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ravitemer/mcphub.nvim" aria-label="ravitemer/mcphub.nvim - 69 stars, Lua" target="_blank" rel="noopener">ravitemer/mcphub.nvim</a>
+                        <span class="stars" aria-hidden="true">⭐ 69</span>
+                        <span class="language" aria-hidden="true">Lua</span> -
+                        <span>MCPHub.nvim is a powerful Neovim plugin designed for managing Model Context Protocol (MCP) servers, enhancing AI integration and workflow efficiency.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/rishikavikondala/mcp-server-aws" aria-label="rishikavikondala/mcp-server-aws - 52 stars, Python" target="_blank" rel="noopener">rishikavikondala/mcp-server-aws</a>
+                        <span class="stars" aria-hidden="true">⭐ 52</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>A Model Context Protocol server implementation for AWS operations supporting S3 and DynamoDB services.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/rusiaaman/wcgw" aria-label="rusiaaman/wcgw - 226 stars, Python" target="_blank" rel="noopener">rusiaaman/wcgw</a>
+                        <span class="stars" aria-hidden="true">⭐ 226</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>wcgw is a desktop shell and coding agent that integrates with Claude and ChatGPT using the Model Context Protocol.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/shaneholloman/mcp-knowledge-graph" aria-label="shaneholloman/mcp-knowledge-graph - 76 stars, JavaScript" target="_blank" rel="noopener">shaneholloman/mcp-knowledge-graph</a>
+                        <span class="stars" aria-hidden="true">⭐ 76</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>An MCP server that provides persistent memory for Claude through a customizable local knowledge graph.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/servers/tree/main/src/time" aria-label="time - 0 stars, TypeScript" target="_blank" rel="noopener">time</a>
+                        <span class="stars" aria-hidden="true">⭐ 0</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A time server implementation as part of the Model Context Protocol servers.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/zcaceres/markdownify-mcp" aria-label="zcaceres/markdownify-mcp - 859 stars, TypeScript" target="_blank" rel="noopener">zcaceres/markdownify-mcp</a>
+                        <span class="stars" aria-hidden="true">⭐ 859</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>Markdownify is an MCP server that converts various file types and web content into Markdown format.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/zueai/mcp-manager" aria-label="zueai/mcp-manager - 98 stars, TypeScript" target="_blank" rel="noopener">zueai/mcp-manager</a>
+                        <span class="stars" aria-hidden="true">⭐ 98</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A desktop application for managing Model Context Protocol (MCP) servers on MacOS via the Claude Desktop app.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+                </section>
+            
+            <section aria-labelledby="mcp-cients"><h2 id="mcp-cients">MCP Cients</h2>
+                <ul aria-label="List of MCP Cients items">
+                    <li>
+                        <a href="https://github.com/AI-QL/chat-mcp" aria-label="AI-QL/chat-mcp - 100 stars, HTML" target="_blank" rel="noopener">AI-QL/chat-mcp</a>
+                        <span class="stars" aria-hidden="true">⭐ 100</span>
+                        <span class="language" aria-hidden="true">HTML</span> -
+                        <span>A cross-platform desktop chat application that uses the Model Context Protocol (MCP) to interface with various large language models.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/BigSweetPotatoStudio/HyperChat" aria-label="BigSweetPotatoStudio/HyperChat - 248 stars, JavaScript" target="_blank" rel="noopener">BigSweetPotatoStudio/HyperChat</a>
+                        <span class="stars" aria-hidden="true">⭐ 248</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>HyperChat is an innovative chat client that integrates multiple LLM APIs using the MCP protocol for enhanced productivity.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ejb503/multimodal-mcp-client" aria-label="Ejb503/multimodal-mcp-client - 128 stars, TypeScript" target="_blank" rel="noopener">Ejb503/multimodal-mcp-client</a>
+                        <span class="stars" aria-hidden="true">⭐ 128</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A multi-modal MCP client providing a voice-controlled AI interface leveraging modern web technologies.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Toolbase-AI/toolbase" aria-label="Toolbase-AI/toolbase - 54 stars, TypeScript" target="_blank" rel="noopener">Toolbase-AI/toolbase</a>
+                        <span class="stars" aria-hidden="true">⭐ 54</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>Toolbase is a desktop application that simplifies adding and managing tools and plugins for AI platforms like Claude, powered by the Model Context Protocol.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ViaVersionMCP/ViaMCP" aria-label="ViaVersionMCP/ViaMCP - 59 stars, Java" target="_blank" rel="noopener">ViaVersionMCP/ViaMCP</a>
+                        <span class="stars" aria-hidden="true">⭐ 59</span>
+                        <span class="language" aria-hidden="true">Java</span> -
+                        <span>ViaMCP is a client-side tool that integrates ViaVersion protocol switching into the Minecraft Coder Pack to enable multi-version support.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/adhikasp/mcp-client-cli" aria-label="adhikasp/mcp-client-cli - 144 stars, Python" target="_blank" rel="noopener">adhikasp/mcp-client-cli</a>
+                        <span class="stars" aria-hidden="true">⭐ 144</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>A CLI client for interacting with MCP servers and running LLM prompts from the terminal.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/daodao97/chatmcp" aria-label="daodao97/chatmcp - 786 stars, Dart" target="_blank" rel="noopener">daodao97/chatmcp</a>
+                        <span class="stars" aria-hidden="true">⭐ 786</span>
+                        <span class="language" aria-hidden="true">Dart</span> -
+                        <span>A cross-platform AI chat client that integrates with the Model Context Protocol to connect with various MCP servers.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/loopwork-ai/iMCP" aria-label="loopwork-ai/iMCP - 141 stars, Swift" target="_blank" rel="noopener">loopwork-ai/iMCP</a>
+                        <span class="stars" aria-hidden="true">⭐ 141</span>
+                        <span class="language" aria-hidden="true">Swift</span> -
+                        <span>iMCP is a macOS app that connects personal data from Messages, Contacts, Calendar, and more to AI systems using the Model Context Protocol.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/loopwork-ai/mcp-swift-sdk" aria-label="loopwork-ai/mcp-swift-sdk - 73 stars, Swift" target="_blank" rel="noopener">loopwork-ai/mcp-swift-sdk</a>
+                        <span class="stars" aria-hidden="true">⭐ 73</span>
+                        <span class="language" aria-hidden="true">Swift</span> -
+                        <span>This project is a Swift SDK for interacting with Model Context Protocol servers and clients, providing a clear and effective way to implement MCP functionalities.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/nanbingxyz/5ire" aria-label="nanbingxyz/5ire - 1247 stars, TypeScript" target="_blank" rel="noopener">nanbingxyz/5ire</a>
+                        <span class="stars" aria-hidden="true">⭐ 1247</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A cross-platform desktop AI assistant and MCP client connecting to major AI service providers with integrated local knowledge retrieval and extensive tool features.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/punkpeye/awesome-mcp-clients" aria-label="punkpeye/awesome-mcp-clients - 367 stars, " target="_blank" rel="noopener">punkpeye/awesome-mcp-clients</a>
+                        <span class="stars" aria-hidden="true">⭐ 367</span>
+                        <span class="language" aria-hidden="true"></span> -
+                        <span>A curated directory that lists various Model Context Protocol (MCP) clients for AI integration.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ssut/Remote-MCP" aria-label="ssut/Remote-MCP - 56 stars, TypeScript" target="_blank" rel="noopener">ssut/Remote-MCP</a>
+                        <span class="stars" aria-hidden="true">⭐ 56</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>Remote-MCP is a type-safe solution for remote Model Context Protocol communication, enabling centralized management of model contexts with immediate accessibility.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+                </section>
+            
+            <section aria-labelledby="mcp-frameworks-and-libraries"><h2 id="mcp-frameworks-and-libraries">MCP Frameworks and libraries</h2>
+                <ul aria-label="List of MCP Frameworks and libraries items">
+                    <li>
+                        <a href="https://github.com/CheMiguel23/MemoryMesh" aria-label="CheMiguel23/MemoryMesh - 76 stars, TypeScript" target="_blank" rel="noopener">CheMiguel23/MemoryMesh</a>
+                        <span class="stars" aria-hidden="true">⭐ 76</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>MemoryMesh is a knowledge graph server that leverages the Model Context Protocol to enable structured memory persistence and dynamic tool generation for enhanced AI interactions.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/FlowArg/FlowUpdater" aria-label="FlowArg/FlowUpdater - 99 stars, Java" target="_blank" rel="noopener">FlowArg/FlowUpdater</a>
+                        <span class="stars" aria-hidden="true">⭐ 99</span>
+                        <span class="language" aria-hidden="true">Java</span> -
+                        <span>FlowUpdater is a Java tool for updating Minecraft with extensive customization and integrated MCP support.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/PederHP/mcpdotnet" aria-label="PederHP/mcpdotnet - 90 stars, C#" target="_blank" rel="noopener">PederHP/mcpdotnet</a>
+                        <span class="stars" aria-hidden="true">⭐ 90</span>
+                        <span class="language" aria-hidden="true">C#</span> -
+                        <span>mcpdotnet is a .NET library implementing the Model Context Protocol, enabling seamless integration of .NET applications with Large Language Models and other data sources.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/QuantGeekDev/mcp-framework" aria-label="QuantGeekDev/mcp-framework - 226 stars, TypeScript" target="_blank" rel="noopener">QuantGeekDev/mcp-framework</a>
+                        <span class="stars" aria-hidden="true">⭐ 226</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A TypeScript framework for building MCP servers with automatic discovery of tools, resources, and prompts.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RafalWilinski/mcp-apple-notes" aria-label="RafalWilinski/mcp-apple-notes - 139 stars, TypeScript" target="_blank" rel="noopener">RafalWilinski/mcp-apple-notes</a>
+                        <span class="stars" aria-hidden="true">⭐ 139</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>MCP Apple Notes is an MCP server that enables semantic search and retrieval augmented generation over Apple Notes for AI assistants like Claude.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Upsonic/Upsonic" aria-label="Upsonic/Upsonic - 6826 stars, Python" target="_blank" rel="noopener">Upsonic/Upsonic</a>
+                        <span class="stars" aria-hidden="true">⭐ 6826</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>Upsonic is a reliability-focused AI agent framework that leverages the Model Context Protocol for production-ready multi-agent workflows.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/afrise/MCPSharp" aria-label="afrise/MCPSharp - 101 stars, C#" target="_blank" rel="noopener">afrise/MCPSharp</a>
+                        <span class="stars" aria-hidden="true">⭐ 101</span>
+                        <span class="language" aria-hidden="true">C#</span> -
+                        <span>MCPSharp is a .NET library that facilitates building Model Context Protocol (MCP) servers and clients for AI systems.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/centralmind/gateway" aria-label="centralmind/gateway - 91 stars, Go" target="_blank" rel="noopener">centralmind/gateway</a>
+                        <span class="stars" aria-hidden="true">⭐ 91</span>
+                        <span class="language" aria-hidden="true">Go</span> -
+                        <span>CentralMind Gateway automatically generates secure, LLM-optimized APIs for structured data, ensuring compliance and facilitating AI integrations.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/chkwon/PATHSolver.jl" aria-label="chkwon/PATHSolver.jl - 53 stars, Julia" target="_blank" rel="noopener">chkwon/PATHSolver.jl</a>
+                        <span class="stars" aria-hidden="true">⭐ 53</span>
+                        <span class="language" aria-hidden="true">Julia</span> -
+                        <span>PATHSolver.jl is a Julia wrapper for the PATH solver that enables solving mixed complementarity problems through both direct C API calls and MathOptInterface integration.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/cyanheads/atlas-mcp-server" aria-label="cyanheads/atlas-mcp-server - 95 stars, TypeScript" target="_blank" rel="noopener">cyanheads/atlas-mcp-server</a>
+                        <span class="stars" aria-hidden="true">⭐ 95</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>A TypeScript-based MCP server with Neo4j integration that enhances project management and collaboration for LLM agents.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/designcomputer/mysql_mcp_server" aria-label="designcomputer/mysql_mcp_server - 90 stars, Python" target="_blank" rel="noopener">designcomputer/mysql_mcp_server</a>
+                        <span class="stars" aria-hidden="true">⭐ 90</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>A secure Model Context Protocol server that enables AI assistants to interact with MySQL databases safely and efficiently.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/heshengtao/comfyui_LLM_party" aria-label="heshengtao/comfyui_LLM_party - 1449 stars, Python" target="_blank" rel="noopener">heshengtao/comfyui_LLM_party</a>
+                        <span class="stars" aria-hidden="true">⭐ 1449</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>A comprehensive LLM agent framework built on ComfyUI that integrates MCP tools and various local and cloud LLM services.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lastmile-ai/mcp-agent" aria-label="lastmile-ai/mcp-agent - 912 stars, Python" target="_blank" rel="noopener">lastmile-ai/mcp-agent</a>
+                        <span class="stars" aria-hidden="true">⭐ 912</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>mcp-agent is a lightweight, composable Python framework for building robust AI agents using the Model Context Protocol.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mastra-ai/mastra" aria-label="mastra-ai/mastra - 10034 stars, TypeScript" target="_blank" rel="noopener">mastra-ai/mastra</a>
+                        <span class="stars" aria-hidden="true">⭐ 10034</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>Mastra is a TypeScript framework that streamlines rapid AI application development with support for agents, workflows, RAG, integrations, and evaluations.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/java-sdk" aria-label="modelcontextprotocol/java-sdk - 186 stars, Java" target="_blank" rel="noopener">modelcontextprotocol/java-sdk</a>
+                        <span class="stars" aria-hidden="true">⭐ 186</span>
+                        <span class="language" aria-hidden="true">Java</span> -
+                        <span>The MCP Java SDK provides official Java integration for Model Context Protocol servers and clients with support for both synchronous and asynchronous communication.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/kotlin-sdk" aria-label="modelcontextprotocol/kotlin-sdk - 209 stars, Kotlin" target="_blank" rel="noopener">modelcontextprotocol/kotlin-sdk</a>
+                        <span class="stars" aria-hidden="true">⭐ 209</span>
+                        <span class="language" aria-hidden="true">Kotlin</span> -
+                        <span>The official Kotlin SDK for Model Context Protocol servers and clients offers comprehensive support for integrating context in LLM applications.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/python-sdk" aria-label="modelcontextprotocol/python-sdk - 3048 stars, Python" target="_blank" rel="noopener">modelcontextprotocol/python-sdk</a>
+                        <span class="stars" aria-hidden="true">⭐ 3048</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>The official Python SDK enables developers to create MCP-compliant servers and clients for LLM interactions.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/rust-sdk" aria-label="modelcontextprotocol/rust-sdk - 99 stars, Rust" target="_blank" rel="noopener">modelcontextprotocol/rust-sdk</a>
+                        <span class="stars" aria-hidden="true">⭐ 99</span>
+                        <span class="language" aria-hidden="true">Rust</span> -
+                        <span>The project is the official Rust SDK for the Model Context Protocol.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/typescript-sdk" aria-label="modelcontextprotocol/typescript-sdk - 2092 stars, TypeScript" target="_blank" rel="noopener">modelcontextprotocol/typescript-sdk</a>
+                        <span class="stars" aria-hidden="true">⭐ 2092</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>The official TypeScript SDK for Model Context Protocol servers and clients simplifies building and interacting with MCP-based LLM applications.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/punkpeye/fastmcp" aria-label="punkpeye/fastmcp - 378 stars, TypeScript" target="_blank" rel="noopener">punkpeye/fastmcp</a>
+                        <span class="stars" aria-hidden="true">⭐ 378</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>FastMCP is a TypeScript framework for building Model Context Protocol (MCP) servers capable of handling client sessions.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sigoden/llm-functions" aria-label="sigoden/llm-functions - 430 stars, Shell" target="_blank" rel="noopener">sigoden/llm-functions</a>
+                        <span class="stars" aria-hidden="true">⭐ 430</span>
+                        <span class="language" aria-hidden="true">Shell</span> -
+                        <span>A versatile framework that simplifies the creation of LLM tools and agents using Bash, JavaScript, and Python functions.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/stripe/agent-toolkit" aria-label="stripe/agent-toolkit - 459 stars, TypeScript" target="_blank" rel="noopener">stripe/agent-toolkit</a>
+                        <span class="stars" aria-hidden="true">⭐ 459</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>Stripe Agent Toolkit is a Python and TypeScript library that integrates the Stripe API with popular agent frameworks, including Model Context Protocol, for seamless API interactions.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/tadata-org/fastapi_mcp" aria-label="tadata-org/fastapi_mcp - 64 stars, Python" target="_blank" rel="noopener">tadata-org/fastapi_mcp</a>
+                        <span class="stars" aria-hidden="true">⭐ 64</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>FastAPI-MCP is a zero-configuration tool that automates the exposure of FastAPI endpoints as Model Context Protocol (MCP) tools.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/wong2/litemcp" aria-label="wong2/litemcp - 123 stars, TypeScript" target="_blank" rel="noopener">wong2/litemcp</a>
+                        <span class="stars" aria-hidden="true">⭐ 123</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>LiteMCP is a TypeScript framework for building Model Context Protocol servers with elegant features for tools, resources, and prompts.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/zcaceres/easy-mcp" aria-label="zcaceres/easy-mcp - 64 stars, TypeScript" target="_blank" rel="noopener">zcaceres/easy-mcp</a>
+                        <span class="stars" aria-hidden="true">⭐ 64</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>EasyMCP is a simple and intuitive TypeScript framework for building Model Context Protocol servers using an Express-like API.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/zortax/MinecraftInjectionAPI" aria-label="zortax/MinecraftInjectionAPI - 67 stars, Java" target="_blank" rel="noopener">zortax/MinecraftInjectionAPI</a>
+                        <span class="stars" aria-hidden="true">⭐ 67</span>
+                        <span class="language" aria-hidden="true">Java</span> -
+                        <span>A lightweight API that injects mods into Minecraft at runtime using MCP deobfuscation mappings.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+                </section>
+            
+            <section aria-labelledby="mcp-utilities-&-tools"><h2 id="mcp-utilities-&-tools">MCP Utilities & Tools</h2>
+                <ul aria-label="List of MCP Utilities & Tools items">
+                    <li>
+                        <a href="https://github.com/phase/MinecraftMappings" aria-label="phase/MinecraftMappings - 58 stars, Kotlin" target="_blank" rel="noopener">phase/MinecraftMappings</a>
+                        <span class="stars" aria-hidden="true">⭐ 58</span>
+                        <span class="language" aria-hidden="true">Kotlin</span> -
+                        <span>A repository providing transitive mappings for enabling conversions between different Minecraft version mapping formats.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sparfenyuk/mcp-proxy" aria-label="sparfenyuk/mcp-proxy - 69 stars, Python" target="_blank" rel="noopener">sparfenyuk/mcp-proxy</a>
+                        <span class="stars" aria-hidden="true">⭐ 69</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>mcp-proxy is a utility tool that bridges communication between MCP servers by converting between stdio and SSE protocols.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+                </section>
+            
+            <section aria-labelledby="mcp-resources-&-educational-materials"><h2 id="mcp-resources-&-educational-materials">MCP Resources & Educational Materials</h2>
+                <ul aria-label="List of MCP Resources & Educational Materials items">
+                    <li>
+                        <a href="https://github.com/AlexMili/Awesome-MCP" aria-label="AlexMili/Awesome-MCP - 71 stars, " target="_blank" rel="noopener">AlexMili/Awesome-MCP</a>
+                        <span class="stars" aria-hidden="true">⭐ 71</span>
+                        <span class="language" aria-hidden="true"></span> -
+                        <span>A curated list of Model Context Protocol (MCP) resources including servers, SDKs, and tools for developers.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/cyanheads/model-context-protocol-resources" aria-label="cyanheads/model-context-protocol-resources - 76 stars, " target="_blank" rel="noopener">cyanheads/model-context-protocol-resources</a>
+                        <span class="stars" aria-hidden="true">⭐ 76</span>
+                        <span class="language" aria-hidden="true"></span> -
+                        <span>This project explores the Model Context Protocol (MCP) through practical resources, guides, and implementations, enhancing the integration and functionality of Large Language Models.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/docs" aria-label="modelcontextprotocol/docs - 203 stars, MDX" target="_blank" rel="noopener">modelcontextprotocol/docs</a>
+                        <span class="stars" aria-hidden="true">⭐ 203</span>
+                        <span class="language" aria-hidden="true">MDX</span> -
+                        <span>The repository holds the official documentation and specification for the Model Context Protocol (MCP).</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/modelcontextprotocol/specification" aria-label="modelcontextprotocol/specification - 632 stars, TypeScript" target="_blank" rel="noopener">modelcontextprotocol/specification</a>
+                        <span class="stars" aria-hidden="true">⭐ 632</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>This repository provides the specification and protocol schema for the Model Context Protocol.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+                </section>
+            
+        </main>
+
+        <footer role="contentinfo">
+            <div class="license">
+                <h2 id="license">License</h2>
+                <a href="https://creativecommons.org/publicdomain/zero/1.0/" aria-label="Creative Commons Zero License">
+                    <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0 License" width="88" height="31" loading="lazy">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
