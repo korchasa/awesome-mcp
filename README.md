@@ -7,9 +7,9 @@ A curated list of awesome Model Context Protocol (MCP) and Model Context Protoco
 
 Table of Contents:
 - [MCP Servers](#mcp-servers) 
-    - [Databases](#databases) (40)
+    - [Databases](#databases) (39)
 
-    - [Cloud & DevOps](#cloud-&-devops) (34)
+    - [Cloud & DevOps](#cloud-&-devops) (35)
 
     - [Browser Automation](#browser-automation) (20)
 
@@ -118,7 +118,6 @@ Table of Contents:
 - [neondatabase-labs/mcp-server-neon](https://github.com/neondatabase-labs/mcp-server-neon) (★349 TypeScript) - Neon MCP Server is an open-source tool that enables natural language interaction with Neon Postgres databases via the Model Context Protocol, simplifying database management and migrations through conversational commands.
 - [qdrant/mcp-server-qdrant](https://github.com/qdrant/mcp-server-qdrant) (★746 Python) - mcp-server-qdrant is an official Model Context Protocol server implementation for Qdrant that enables semantic memory management and integration with LLM applications through vector search.
 - [runekaagaard/mcp-alchemy](https://github.com/runekaagaard/mcp-alchemy) (★257 Python) - MCP Alchemy is an MCP server that enables large language models like Claude Desktop to access, understand, and interact with various relational databases through SQL queries and schema exploration.
-- [sirmews/mcp-pinecone](https://github.com/sirmews/mcp-pinecone) (★131 Python) - mcp-pinecone is an MCP server enabling semantic search and document management on a Pinecone vector database for MCP clients like Claude Desktop.
 - [suekou/mcp-notion-server](https://github.com/suekou/mcp-notion-server) (★769 TypeScript) - Notion MCP Server is an MCP server that enables large language models to efficiently interact with Notion workspaces by converting content to Markdown to optimize token usage.
 - [supabase-community/supabase-mcp](https://github.com/supabase-community/supabase-mcp) (★1722 TypeScript) - Supabase MCP Server connects Supabase projects to AI assistants using the Model Context Protocol, enabling LLMs to manage and query Supabase resources.
 - [weaviate/mcp-server-weaviate](https://github.com/weaviate/mcp-server-weaviate) (★134 Python) - Weaviate MCP Server integrates Model Context Protocol functionalities into the Weaviate vector search environment to enable context-aware data insertion and hybrid search capabilities.
@@ -141,6 +140,7 @@ Table of Contents:
 - [akuity/argocd-mcp](https://github.com/akuity/argocd-mcp) (★165 TypeScript) - argocd-mcp is an MCP server implementation for Argo CD that enables AI assistants to manage Kubernetes applications through natural language interaction and integrates with various MCP clients.
 - [alexei-led/aws-mcp-server](https://github.com/alexei-led/aws-mcp-server) (★141 Python) - AWS MCP Server is a lightweight service that enables AI assistants to securely execute AWS CLI commands through the Model Context Protocol, enhancing cloud infrastructure management.
 - [alexei-led/k8s-mcp-server](https://github.com/alexei-led/k8s-mcp-server) (★151 Python) - K8s MCP Server is a Docker-based implementation of Anthropic's Model Context Protocol that enables AI assistants like Claude to securely execute Kubernetes CLI commands for AI-driven cluster management and troubleshooting.
+- [alexei-led/spotinfo](https://github.com/alexei-led/spotinfo) (★131 Go) - Spotinfo is a CLI tool and MCP server for exploring AWS EC2 Spot Instances, providing real-time placement scores, pricing, and interruption data with advanced filtering and AI assistant integration.
 - [anaisbetts/mcp-installer](https://github.com/anaisbetts/mcp-installer) (★1266 JavaScript) - mcp-installer is an MCP server that automates the installation of other MCP servers via natural language commands to Claude, supporting packages from npm and PyPi.
 - [apache/apisix](https://github.com/apache/apisix) (★15313 Lua) - Apache APISIX is a high-performance cloud-native API Gateway and AI Gateway that supports Model Context Protocol (MCP) integration through its mcp-bridge plugin, offering dynamic traffic management, security, and observability features.
 - [awslabs/mcp](https://github.com/awslabs/mcp) (★4369 Python) - AWS MCP Servers is a suite of specialized Model Context Protocol servers that integrate AWS best practices and resources into AI-powered development workflows to enhance cloud-native development and infrastructure management.
