@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://awesome-mcp.korchasa.dev/sitemap.xml
