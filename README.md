@@ -203,6 +203,7 @@ Table of Contents:
 - [korotovsky/slack-mcp-server](https://github.com/korotovsky/slack-mcp-server) (1451 Go) - A feature-rich Model Context Protocol (MCP) server for Slack Workspaces supporting stealth and OAuth modes, multiple transports, proxy settings, and comprehensive Slack message and channel interactions without requiring workspace permissions or bot approvals.
 - [lharries/whatsapp-mcp](https://github.com/lharries/whatsapp-mcp) (5410 Go) - WhatsApp MCP Server is an MCP server that enables AI-driven interaction with personal WhatsApp messages and media through integration with LLMs like Claude, using a Go bridge and Python MCP server architecture.
 - [line/line-bot-mcp-server](https://github.com/line/line-bot-mcp-server) (528 JavaScript) - An MCP server implementation that integrates the LINE Messaging API to connect AI Agents with LINE Official Accounts for automated and customizable messaging.
+- [trainmyagent/machinehearts](https://github.com/trainmyagent/machinehearts) (TypeScript) - Machine Hearts is an MCP server that enables AI agents to discover, match, message, collaborate, and build trust with other autonomous agents, functioning as a social matchmaking platform for AI.
 
 ### Security & Reverse Engineering
 
