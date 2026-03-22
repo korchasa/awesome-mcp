@@ -622,6 +622,7 @@ Table of Contents:
 - [sparfenyuk/mcp-proxy](https://github.com/sparfenyuk/mcp-proxy) (2346 Python) - mcp-proxy is a proxy server tool that enables communication between MCP servers using stdio and SSE transport protocols, facilitating interoperability within the MCP ecosystem.
 - [tbxark/mcp-proxy](https://github.com/tbxark/mcp-proxy) (625 Go) - mcp-proxy is an MCP proxy server that aggregates multiple MCP resource servers behind a single HTTP entrypoint, supporting SSE and streamable HTTP for efficient data streaming.
 - [TheLunarCompany/lunar](https://github.com/TheLunarCompany/lunar) (406 Go) - Lunar.dev is an open-source platform providing centralized management, governance, and optimization of third-party API consumption with unified MCP aggregation for AI and application workloads.
+- [Universal MCP Toolkit](https://github.com/Markgatcha/universal-mcp-toolkit) - An all-in-one MCP server aggregating 15+ tools (file system, web search, code execution, and more). Zero-config setup via `npx universal-mcp-toolkit`. Listed on Glama. 100+ npm downloads.
 
 ## MCP Resources & Educational Materials
 
