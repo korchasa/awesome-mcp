@@ -206,6 +206,7 @@ Table of Contents:
 
 ### Security & Reverse Engineering
 
+- [ExposureGuard/haldir](https://github.com/ExposureGuard/haldir) (Python) - Guardian layer for AI agents: scoped sessions with permissions and spend limits (Gate), AES-encrypted secrets (Vault), immutable audit trail with anomaly detection (Watch), and proxy mode that intercepts every MCP tool call for policy enforcement. 10 MCP tools, REST API, human-in-the-loop approvals. 98/100 on Smithery. [haldir.xyz](https://haldir.xyz)
 - [0xKoda/WireMCP](https://github.com/0xKoda/WireMCP) (409 JavaScript) - WireMCP is an MCP server that empowers Large Language Models with real-time network traffic analysis using Wireshark's tshark tool to provide structured context for threat detection, diagnostics, and anomaly identification.
 - [ant4g0nist/lisa.py](https://github.com/ant4g0nist/lisa.py) (741 Python) - LLDB MCP Integration enables AI assistants like Claude to interact with LLDB debugging sessions through the Model-Context Protocol, facilitating natural language debugging commands and automation.
 - [BlackSnufkin/LitterBox](https://github.com/BlackSnufkin/LitterBox) (1335 YARA) - LitterBox is a secure sandbox environment integrating with LLM agents via MCP to provide advanced malware analysis and testing capabilities for red and blue teams before deployment.
